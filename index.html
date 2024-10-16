@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+     
+    <link rel="shortcut icon" href="img/world.svg" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300;6..12,600;6..12,800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="queries.css" />
+    <script defer src="script.js"></script>
+    <title>Countries</title>
+  </head> 
+ 
+  <style>
+   
+  </style>
+  <body>
+    <div class="change">
+      <div class="nav-co">
+        <nav class="black-e intro-header">
+          <h1 class="head">Where in the world?</h1>
+          <div class="dark-mod">
+            <svg
+              class="dark-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="#3c77d8"
+              viewBox="0 0 256 256"
+            >
+              <path
+                d="M244,96a12,12,0,0,1-12,12H220v12a12,12,0,0,1-24,0V108H184a12,12,0,0,1,0-24h12V72a12,12,0,0,1,24,0V84h12A12,12,0,0,1,244,96ZM144,60h4v4a12,12,0,0,0,24,0V60h4a12,12,0,0,0,0-24h-4V32a12,12,0,0,0-24,0v4h-4a12,12,0,0,0,0,24Zm75.81,90.38A12,12,0,0,1,222,162.3,100,100,0,1,1,93.7,34a12,12,0,0,1,15.89,13.6A85.12,85.12,0,0,0,108,64a84.09,84.09,0,0,0,84,84,85.22,85.22,0,0,0,16.37-1.59A12,12,0,0,1,219.81,150.38ZM190,172A108.13,108.13,0,0,1,84,66,76,76,0,1,0,190,172Z"
+              ></path>
+            </svg>
+            <svg
+              class="light-icon transperent"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="#3c77d8"
+              viewBox="0 0 256 256"
+            >
+              <path
+                d="M116,32V16a12,12,0,0,1,24,0V32a12,12,0,0,1-24,0Zm80,96a68,68,0,1,1-68-68A68.07,68.07,0,0,1,196,128Zm-24,0a44,44,0,1,0-44,44A44.05,44.05,0,0,0,172,128ZM51.51,68.49a12,12,0,1,0,17-17l-12-12a12,12,0,0,0-17,17Zm0,119-12,12a12,12,0,0,0,17,17l12-12a12,12,0,1,0-17-17ZM196,72a12,12,0,0,0,8.49-3.51l12-12a12,12,0,0,0-17-17l-12,12A12,12,0,0,0,196,72Zm8.49,115.51a12,12,0,0,0-17,17l12,12a12,12,0,0,0,17-17ZM44,128a12,12,0,0,0-12-12H16a12,12,0,0,0,0,24H32A12,12,0,0,0,44,128Zm84,84a12,12,0,0,0-12,12v16a12,12,0,0,0,24,0V224A12,12,0,0,0,128,212Zm112-96H224a12,12,0,0,0,0,24h16a12,12,0,0,0,0-24Z"
+              ></path>
+            </svg>
+            dark mode
+          </div>
+        </nav>
+      </div>
+      <div class="container">
+        <div class="search-section">
+          <form class="search">
+            <button class="search-btn">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="#3c77d8"
+                viewBox="0 0 256 256"
+              >
+                <path
+                  d="M232.49,215.51,185,168a92.12,92.12,0,1,0-17,17l47.53,47.54a12,12,0,0,0,17-17ZM44,112a68,68,0,1,1,68,68A68.07,68.07,0,0,1,44,112Z"
+                ></path>
+              </svg>
+            </button>
+            <input
+              type="text"
+              class="black-e search__field"
+              placeholder="Search the country"
+            />
+          </form>
+
+          <div class="black-e search-list">
+            <div class="title-continent">
+              <h3 class="title-continent-t">
+                Filter by Region
+                <svg
+                  class="drop-svg"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="#3c77d8"
+                  viewBox="0 0 256 256"
+                >
+                  <path
+                    d="M216.49,104.49l-80,80a12,12,0,0,1-17,0l-80-80a12,12,0,0,1,17-17L128,159l71.51-71.52a12,12,0,0,1,17,17Z"
+                  ></path>
+                </svg>
+              </h3>
+            </div>
+
+            <ul class="continents hidden">
+              <li class="c">World</li>
+              <li class="c">Africa</li>
+              <li class="c">Americas</li>
+              <li class="c">Asia</li>
+              <li class="c">Europe</li>
+              <li class="c">Oceania</li>
+            </ul>
+          </div>
+        </div>
+
+        <main class="black-e grid">
+          <div class="card">
+            <div class="cover"></div>
+            <div class="info">
+              <ul class="listA">
+                <h2 class="square"></h2>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+              </ul>
+            </div>
+          </div>
+          <div class="card">
+            <div class="cover"></div>
+            <div class="info">
+              <ul class="listA">
+                <h2 class="square"></h2>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+              </ul>
+            </div>
+          </div>
+          <div class="card">
+            <div class="cover"></div>
+            <div class="info">
+              <ul class="listA">
+                <h2 class="square"></h2>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+              </ul>
+            </div>
+          </div>
+          <div class="card">
+            <div class="cover"></div>
+            <div class="info">
+              <ul class="listA">
+                <h2 class="square"></h2>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+              </ul>
+            </div>
+          </div>
+          <div class="card">
+            <div class="cover"></div>
+            <div class="info">
+              <ul class="listA">
+                <h2 class="square"></h2>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+              </ul>
+            </div>
+          </div>
+          <div class="card">
+            <div class="cover"></div>
+            <div class="info">
+              <ul class="listA">
+                <h2 class="square"></h2>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+              </ul>
+            </div>
+          </div>
+          <div class="card">
+            <div class="cover"></div>
+            <div class="info">
+              <ul class="listA">
+                <h2 class="square"></h2>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+              </ul>
+            </div>
+          </div>
+          <div class="card">
+            <div class="cover"></div>
+            <div class="info">
+              <ul class="listA">
+                <h2 class="square"></h2>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+              </ul>
+            </div>
+          </div>
+          <div class="card">
+            <div class="cover"></div>
+            <div class="info">
+              <ul class="listA">
+                <h2 class="square"></h2>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+              </ul>
+            </div>
+          </div>
+          <div class="card">
+            <div class="cover"></div>
+            <div class="info">
+              <ul class="listA">
+                <h2 class="square"></h2>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+              </ul>
+            </div>
+          </div>
+          <div class="card">
+            <div class="cover"></div>
+            <div class="info">
+              <ul class="listA">
+                <h2 class="square"></h2>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+              </ul>
+            </div>
+          </div>
+          <div class="card">
+            <div class="cover"></div>
+            <div class="info">
+              <ul class="listA">
+                <h2 class="square"></h2>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+              </ul>
+            </div>
+          </div>
+          <div class="card">
+            <div class="cover"></div>
+            <div class="info">
+              <ul class="listA">
+                <h2 class="square"></h2>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+              </ul>
+            </div>
+          </div>
+          <div class="card">
+            <div class="cover"></div>
+            <div class="info">
+              <ul class="listA">
+                <h2 class="square"></h2>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+              </ul>
+            </div>
+          </div>
+          <div class="card">
+            <div class="cover"></div>
+            <div class="info">
+              <ul class="listA">
+                <h2 class="square"></h2>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+              </ul>
+            </div>
+          </div>
+          <div class="card">
+            <div class="cover"></div>
+            <div class="info">
+              <ul class="listA">
+                <h2 class="square"></h2>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+              </ul>
+            </div>
+          </div>
+          <div class="card">
+            <div class="cover"></div>
+            <div class="info">
+              <ul class="listA">
+                <h2 class="square"></h2>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+              </ul>
+            </div>
+          </div>
+          <div class="card">
+            <div class="cover"></div>
+            <div class="info">
+              <ul class="listA">
+                <h2 class="square"></h2>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+              </ul>
+            </div>
+          </div>
+
+          <!-- <a class="countries" href="2231">
+              <div class="blur-load">
+                <img
+                  class="flag"
+                  src=https://flagcdn.com/w320/pa.png
+                  loading="lazy"
+                  alt=""
+                /> 
+              </div>
+              <div class="countey-details">
+                <h2 class="country-name" data-numb="${countryData.countries.id}">nigeria</h2>
+                <ul class="country-list">
+                
+                  <li><span>population:</span>10200030</li>
+                  <li><span>Region:</span>Africa</li>
+                  <li><span>capital:</span>Abuja</li>
+                </ul>
+              </div>
+          </a>  -->
+        </main>
+
+        <aside class="black-e btn-bottom">
+          <button class="btn--inline pagination__btn--prev">
+            <svg
+              class="btn-l"
+              xmlns="http://www.w3.org/2000/svg"
+              width="36"
+              height="36"
+              fill="#3c77d8"
+              viewBox="0 0 256 256"
+            >
+              <path d="M160,48V208L80,128Z" opacity="0.2"></path>
+              <path
+                d="M163.06,40.61a8,8,0,0,0-8.72,1.73l-80,80a8,8,0,0,0,0,11.32l80,80A8,8,0,0,0,168,208V48A8,8,0,0,0,163.06,40.61ZM152,188.69,91.31,128,152,67.31Z"
+              ></path>
+            </svg>
+            <span>Page 1</span>
+          </button>
+          <button class="btn--inline pagination__btn--next">
+            <span>Page 3</span>
+            <svg
+              class="btn-R"
+              xmlns="http://www.w3.org/2000/svg"
+              width="36"
+              height="36"
+              fill="#3c77d8"
+              viewBox="0 0 256 256"
+            >
+              <path d="M176,128,96,208V48Z" opacity="0.2"></path>
+              <path
+                d="M181.66,122.34l-80-80A8,8,0,0,0,88,48V208a8,8,0,0,0,13.66,5.66l80-80A8,8,0,0,0,181.66,122.34ZM104,188.69V67.31L164.69,128Z"
+              ></path>
+            </svg>
+          </button>
+        </aside>
+
+        <div class="black-e aside-div hidden">
+          <aside class="aside-c">
+            <div class="aside-b">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="28"
+                height="28"
+                fill="#3c77d8"
+                viewBox="0 0 256 256"
+              >
+                <path
+                  d="M222,128a6,6,0,0,1-6,6H54.49l61.75,61.76a6,6,0,1,1-8.48,8.48l-72-72a6,6,0,0,1,0-8.48l72-72a6,6,0,0,1,8.48,8.48L54.49,122H216A6,6,0,0,1,222,128Z"
+                ></path>
+              </svg>
+              <p>back</p>
+            </div>
+
+            <div class="img-aside">
+              <img
+                class="flag-aside"
+                src="https://flagcdn.com/w320/ax.png"
+                loading="lazy"
+                alt=""
+              />
+            </div>
+
+            <div class="country-info">
+              <h2 class="countryHead">belgium</h2>
+
+              <ul class="country-data">
+                <li>Native Name: <span>baeed</span></li>
+                <li>Population: <span>1232,4453</span></li>
+                <li>Region: <span>Europe</span></li>
+                <li>Sub Region: <span>Western Europe</span></li>
+                <li>Capital: <span>Brussels</span></li>
+                <li>Top level domain: <span>be</span></li>
+                <li>Currencies: <span>Eur</span></li>
+                <li>languages: <span>french</span></li>
+              </ul>
+
+              <div class="border-detail">
+                <p class="border-h">border countries:</p>
+                <div class="border-l">
+                  <p>france</p>
+                  <p>france</p>
+                  <p>france</p>
+                  <p>france</p>
+                  <p>france</p>
+                  <p>france</p>
+                  <p>france</p>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </div>
+    <div class="error hidden">
+      <div class="error-body">
+        <svg
+          class="error-icon"
+          xmlns="http://www.w3.org/2000/svg"
+          width="60"
+          height="60"
+          fill="#c6d83b"
+          viewBox="0 0 256 256"
+        >
+          <path
+            d="M128,24A104,104,0,1,0,232,128,104.13,104.13,0,0,0,128,24ZM92,96a12,12,0,1,1-12,12A12,12,0,0,1,92,96Zm76,72H88a8,8,0,0,1,0-16h80a8,8,0,0,1,0,16Zm-4-48a12,12,0,1,1,12-12A12,12,0,0,1,164,120Z"
+          ></path>
+        </svg>
+        <div class="error-text">
+          <h2 class="errortext">
+            something went wrong!!, check your internet connection and try again
+          </h2>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

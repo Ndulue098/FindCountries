@@ -1,0 +1,14 @@
+{
+  "name": "findcountrys",
+  "version": "1.0.0",
+  "description": "all country data",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --dist-dir ./dist"
+  },
+  "author": "Christian",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.10.0"
+  }
+}
